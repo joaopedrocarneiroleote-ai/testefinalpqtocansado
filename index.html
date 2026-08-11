@@ -1,45 +1,124 @@
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Site teste</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Biblioteca Digital</title>
     <style>
-        body{
-            
-            background: linear-gradient(to right, #4facfe, #00f2fe);
+        
+        
+        body {
+             background: linear-gradient(to right, #2675c4, #269297);
             
            
             height: 100vh; 
             margin: 0;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333333;
+            margin: 0;
+            padding: 20px;
         }
 
-        .botao-legal {
-    background-color: #ff5722; /* Cor de fundo laranja */
-    color: rgb(0, 0, 0);              /* Cor da letra */
-    padding: 12px 24px;        /* Espaçamento interno */
-    border: none;              /* Remove a borda padrão */
-    border-radius: 8px;        /* Arredonda as pontas */
-    font-size: 16px;           /* Tamanho da letra */
-    cursor: pointer;           /* Muda o cursor para a mãozinha */
-    transition: 0.3s;          /* Efeito suave na transição */
-  }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
 
-  /* Efeito quando o mouse passa em cima */
-  .botao-legal:hover {
-    background-color: #e64a19; /* Laranja mais escuro */
-  }
-    .IM{
-        width: 30px;
-        height: auto;
-    }
+        header h1 {
+            color: #1a1a1a;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            color: #0e0d0d;
+            font-size: 16px;
+        }
+
+        
+        .biblioteca-grid {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        
+        .livro-card {
+            background-color: #ffffff85;
+            border-radius: 12px;
+            padding: 20px;
+            width: 220px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+       
+        .livro-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .livro-card h3 {
+            font-size: 18px;
+            color: #000000;
+            margin: 15px 0 5px 0;
+        }
+
+        .livro-card p {
+            font-size: 14px;
+            color: #050505;
+            margin-bottom: 20px;
+        }
+
+        .botao-ler {
+            background-color: #4961c9;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .botao-ler:hover {
+            background-color: #4961c9;
+        }
     </style>
 </head>
- <body><center>
-        <h1><i> L </i></h1>
-        <br>
-         <p style="font-size: 34px;"> Site teste, Se liga nessa <img src="IM.png" class="IM"> <a href="https://www.youtube.com/watch?v=Bn1OgpWpeaA&list=RDBn1OgpWpeaA&start_radio=1>"><button class="botao-legal">Clique Aqui</button></a>
-        <br>
-        <br>
-        </center>
-    </body>
-</html>
+<body>
+
+    <header>
+        <h1>📖 Biblioteca Literária</h1>
+        <p><b>Explore seus livros favoritos em um só lugar</b></p>
+    </header>
+
+    <div class="biblioteca-grid">
+      
+        <div class="livro-card">
+            <h3>O Pequeno Príncipe</h3>
+            <p>Antoine de Saint-Exupéry</p>
+           <a href="https://www.sesirs.org.br/sites/default/files/paragraph--files/o_pequeno_principe_-_antoine_de_saint-exupery_1.pdf"><button class="botao-ler">Ler Livro</button></a>
+        </div>
+
+     
+        <div class="livro-card">
+            <h3>Dom Casmurro</h3>
+            <p>Machado de Assis</p>
+           <a href="https://www.curso-objetivo.br/vestibular/assets/download/obras-literarias/machado-de-assis/dom-casmurro.pdf"><button class="botao-ler">Ler Livro</button></a>
+        </div>
+
+    
+        <div class="livro-card">
+            <h3>A Revolução dos Bichos</h3>
+            <p>George Orwell</p>
+            <a href="https://sites.unipampa.edu.br/petletrasbage/files/2025/07/orwell-a-revolucao-dos-bichos.pdf"><button class="botao-ler">Ler Livro</button></a>
+        </div>
+    </div>
+
+</body>
+</html>>
